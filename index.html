@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,11 @@
     <section class="hero">
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item"><div class="button is-info is-hovered" style="font-family: 'Audiowide', cursive;"><strong class="title">BookIO</strong></div></a>
+                <a class="navbar-item">
+                    <div class="button is-info is-hovered" style="font-family: 'Audiowide', cursive;">
+                        <strong class="title">BookIO</strong>
+                    </div>
+                </a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
                    data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
@@ -27,7 +31,7 @@
                     <a class="navbar-item" href="index.html">Home</a>
                     <a class="navbar-item" href="addNewBook/addBook.html">Add New Book</a>
                     <a class="navbar-item" href="lendBook/lend.html">Lend Books</a>
-                    <a class="navbar-item" href="returnBook/return.html">Receive Books</a>
+                    <a class="navbar-item" href="returnBook/return.html">Return Books</a>
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">More</a>
                         <div class="navbar-dropdown">
@@ -42,7 +46,7 @@
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons has-addons">
-                            <a class="button is-info">Sign up</strong></a>
+                            <a class="button is-info">Sign up</a>
                             <a class="button"><strong>Log in</strong></a>
                         </div>
                     </div>
@@ -51,7 +55,7 @@
         </nav>
         <div class="hero-body">
             <div class="container">
-                <h1 class="title">Dashboard</h1>
+                <h1 class="title is-size-1">Dashboard</h1>
             </div>
         </div>
     </section>
@@ -61,29 +65,54 @@
         <div class="tile is-vertical is-8">
             <div class="tile">
                 <div class="tile is-parent is-vertical">
-                    <article class="tile is-child notification is-primary">
-                        <p class="title">Vertical...</p>
-                        <p class="subtitle">Top tile</p>
+                    <article class="tile is-child notification is-info">
+                        <p class="title">Search for books</p>
+                        <form>
+                            <div class="field is-horizontal">
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+                                            <input class="input" type="text"
+                                                   placeholder="e.g. Title or Keyword">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+                                            <button class="button is-info is-inverted"><strong>Find</strong></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </article>
-                    <article class="tile is-child notification is-warning">
-                        <p class="title">...tiles</p>
-                        <p class="subtitle">Bottom tile</p>
+                    <article class="tile is-child notification">
+                        <p class="title">Statistics</p>
+                        <p class="subtitle">Books currently lent out: 213 of 1532</p>
+                        <progress class="progress is-success" value="13.9" max="100" style="border: solid 2px;">13.9%</progress>
                     </article>
                 </div>
                 <div class="tile is-parent">
-                    <article class="tile is-child notification is-info">
-                        <p class="title">Middle tile</p>
-                        <p class="subtitle">With an image</p>
-                        <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/640x480.png">
-                        </figure>
+                    <article class="tile is-child notification is-info is-fullwidth" style="padding-right: 24px">
+                        <p class="title">Actions</p>
+                        <a class="button is-large is-fullwidth is-info is-inverted is-outlined  mt-2"
+                           href="lendBook/lend.html">Lend books</a>
+                        <a class="button is-large is-fullwidth is-info is-inverted is-outlined  mt-2"
+                           href="returnBook/return.html">Return Books</a>
+                        <a class="button is-large is-fullwidth is-info is-inverted is-outlined  mt-2"
+                           href="addNewBook/addBook.html">Add new book</a>
+                        <a class="button is-large is-fullwidth is-info is-inverted is-outlined  mt-2">
+                            Check overdue books</a>
                     </article>
                 </div>
             </div>
             <div class="tile is-parent">
                 <article class="tile is-child notification is-danger">
-                    <p class="title">Wide tile</p>
-                    <p class="subtitle">Aligned with the right tile</p>
+                    <p class="title">Overdues</p>
+                    <p class="subtitle">Display overdue books info here...</p>
                     <div class="content">
                         <!-- Content -->
                     </div>
@@ -91,12 +120,69 @@
             </div>
         </div>
         <div class="tile is-parent">
-            <article class="tile is-child notification is-success">
+            <article class="tile is-child notification">
                 <div class="content">
-                    <p class="title">Tall tile</p>
-                    <p class="subtitle">With even more content</p>
+                    <p class="title">New Books for Children</p>
+                    <p class="subtitle">
+                        Books newly introduced at "Büchereien Wien" in the last 30 days with the
+                        category "Kinderbuch":
+                        <a href="https://buechereien.wien.gv.at/Mediensuche/Einfache-Suche?searchhash=OCLC_356cdbe9ca79c0a160e858fa48f2d3205a8705bb"
+                           target="_blank"><strong class="has-text-link">visit...</strong></a>
+                    </p>
                     <div class="content">
-                        <!-- Content -->
+                        <a href="https://buechereien.wien.gv.at/Permalink.aspx?id=1147323"><article class="media">
+                            <figure class="media-left">
+                                <p class="image is-64x64">
+                                    <img alt="Book Cover" src="https://cover.ekz.de/9783707414417.jpg">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>Ich bin da, kleiner Bär!</strong><br/>
+                                        <small><strong>VerfasserIn:</strong> Ammerer, Karin</small><br/>
+                                        <small><strong>Jahr:</strong> 2012</small><br/>
+                                        <small><strong>Verlag:</strong> Wien, G & G</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </article></a>
+                        <hr/>
+                        <a href="https://buechereien.wien.gv.at/Permalink.aspx?id=1147323"><article class="media">
+                            <figure class="media-left">
+                                <p class="image is-64x64">
+                                    <img alt="Book Cover" src="https://cover.ekz.de/9783209041708.jpg">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>100 Kinderfragen zur Natur</strong><br/>
+                                        <small><strong>VerfasserIn:</strong> Gayl, Reinhold</small><br/>
+                                        <small><strong>Jahr:</strong> 2003</small><br/>
+                                        <small><strong>Verlag:</strong> Wien, öbv und hpt</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </article></a>
+                        <hr/>
+                        <a href="https://buechereien.wien.gv.at/Permalink.aspx?id=1147323"><article class="media">
+                            <figure class="media-left">
+                                <p class="image is-64x64">
+                                    <img alt="Book Cover" src="https://cover.ekz.de/9783407760142.jpg">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>Post für den Tiger</strong><br/>
+                                        <small><strong>VerfasserIn:</strong> Janosch</small><br/>
+                                        <small><strong>Jahr:</strong> 2004</small><br/>
+                                        <small><strong>Verlag:</strong> Weinheim ; Basel, Beltz und Gelberg</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </article></a>
                     </div>
                 </div>
             </article>
