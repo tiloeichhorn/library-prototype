@@ -2,31 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>BookIO</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 <body style="max-width: 1400px; margin:auto">
 <header>
     <section class="hero">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav aria-label="main navigation" class="navbar" role="navigation">
             <div class="navbar-brand">
                 <a class="navbar-item">
                     <div class="button is-info is-hovered" style="font-family: 'Audiowide', cursive;">
                         <strong class="title">BookIO</strong>
                     </div>
                 </a>
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                   data-target="navbarBasicExample">
+                <a aria-expanded="false" aria-label="menu" class="navbar-burger" data-target="navbarBasicExample"
+                   role="button">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-            <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-menu" id="navbarBasicExample">
                 <div class="navbar-start">
                     <a class="navbar-item" href="index.html">Home</a>
                     <a class="navbar-item" href="addNewBook/addBook.html">Add New Book</a>
@@ -60,7 +60,7 @@
         </div>
     </section>
 </header>
-<section>
+<section style="min-height: 900px;">
     <div class="tile is-ancestor">
         <div class="tile is-vertical is-8">
             <div class="tile">
@@ -68,31 +68,32 @@
                     <article class="tile is-child notification ">
                         <p class="title">Search for books</p>
                         <form>
-                            <div class="field is-horizontal">
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control">
-                                            <input class="input is-info" type="text"
-                                                   placeholder="e.g. Title or Keyword">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control">
-                                            <button class="button is-info "><strong>Find</strong></button>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="field has-addons has-addons-left">
+                                <p class="control">
+                                    <span class="select is-info">
+                                      <select>
+                                        <option>Tag</option>
+                                        <option>Title</option>
+                                        <option>Author</option>
+                                      </select>
+                                    </span>
+                                </p>
+                                <p class="control">
+                                    <input class="input is-info" placeholder="search text ..."
+                                           type="text">
+                                </p>
+                                <p class="control">
+                                        <button class="button is-info "><strong>Find</strong></button>
+                                </p>
                             </div>
                         </form>
+                        <p><a class="has-text-link">Advanced Search</a></p>
                     </article>
                     <article class="tile is-child notification">
                         <p class="title">Statistics</p>
                         <p class="subtitle">Books currently lent out: 213 of 1532</p>
-                        <progress class="progress is-success" value="13.9" max="100" style="border: solid 2px;">13.9%</progress>
+                        <progress class="progress is-success" max="100" style="border: solid 2px;" value="13.9">13.9%
+                        </progress>
                     </article>
                 </div>
                 <div class="tile is-parent">
@@ -110,11 +111,19 @@
                 </div>
             </div>
             <div class="tile is-parent">
-                <article class="tile is-child notification is-danger">
+                <article class="tile is-child notification is-rounded" style="border: solid 2px hsl(348, 100%, 61%);">
                     <p class="title">Overdues</p>
-                    <p class="subtitle">These borrowings should be returned by now:</p>
                     <div class="content">
-                        <!-- Content -->
+                        <table class="table is-narrow is-hoverable">
+                            <thead>
+                                <tr><th>ID</th><th>Date</th><th>Student</th><th>Class</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><a>20201019-0012</a></td><td>02/11/2020</td><td>Jannick Gruber</td><td>1A</td></tr>
+                                <tr><td><a>20201201-0007</a></td><td>15/12/2020</td><td>Sophie Brunner</td><td>3B</td></tr>
+                                <tr><td><a>20201222-0032</a></td><td>05/01/2021</td><td>Lukas Maier</td><td>4</td></tr>
+                            </tbody>
+                        </table>
                     </div>
                 </article>
             </div>
@@ -130,59 +139,71 @@
                            target="_blank"><strong class="has-text-link">visit...</strong></a>
                     </p>
                     <div class="content">
-                        <a href="https://buechereien.wien.gv.at/Permalink.aspx?id=1147323"><article class="media">
-                            <figure class="media-left">
-                                <p class="image is-64x64">
-                                    <img alt="Book Cover" src="https://cover.ekz.de/9783707414417.jpg">
-                                </p>
-                            </figure>
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>
-                                        <strong>Ich bin da, kleiner Bär!</strong><br/>
-                                        <small><strong>VerfasserIn:</strong> Ammerer, Karin</small><br/>
-                                        <small><strong>Jahr:</strong> 2012</small><br/>
-                                        <small><strong>Verlag:</strong> Wien, G & G</small>
+                        <a href="https://buechereien.wien.gv.at/Permalink.aspx?id=1147323">
+                            <article class="media">
+                                <figure class="media-left">
+                                    <p class="image is-64x64">
+                                        <img alt="Book Cover" src="https://cover.ekz.de/9783707414417.jpg">
                                     </p>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Ich bin da, kleiner Bär!</strong><br/>
+                                            <small><strong>VerfasserIn:</strong> Ammerer, Karin</small>
+                                            <br/>
+                                            <small><strong>Jahr:</strong> 2012</small>
+                                            <br/>
+                                            <small><strong>Verlag:</strong> Wien, G & G</small>
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </article></a>
+                            </article>
+                        </a>
                         <hr/>
-                        <a href="https://buechereien.wien.gv.at/Permalink.aspx?id=0602085"><article class="media">
-                            <figure class="media-left">
-                                <p class="image is-64x64">
-                                    <img alt="Book Cover" src="https://cover.ekz.de/9783209041708.jpg">
-                                </p>
-                            </figure>
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>
-                                        <strong>100 Kinderfragen zur Natur</strong><br/>
-                                        <small><strong>VerfasserIn:</strong> Gayl, Reinhold</small><br/>
-                                        <small><strong>Jahr:</strong> 2003</small><br/>
-                                        <small><strong>Verlag:</strong> Wien, öbv und hpt</small>
+                        <a href="https://buechereien.wien.gv.at/Permalink.aspx?id=0602085">
+                            <article class="media">
+                                <figure class="media-left">
+                                    <p class="image is-64x64">
+                                        <img alt="Book Cover" src="https://cover.ekz.de/9783209041708.jpg">
                                     </p>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>100 Kinderfragen zur Natur</strong><br/>
+                                            <small><strong>VerfasserIn:</strong> Gayl, Reinhold</small>
+                                            <br/>
+                                            <small><strong>Jahr:</strong> 2003</small>
+                                            <br/>
+                                            <small><strong>Verlag:</strong> Wien, öbv und hpt</small>
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </article></a>
+                            </article>
+                        </a>
                         <hr/>
-                        <a href="https://buechereien.wien.gv.at/Permalink.aspx?id=1109108"><article class="media">
-                            <figure class="media-left">
-                                <p class="image is-64x64">
-                                    <img alt="Book Cover" src="https://cover.ekz.de/9783407760142.jpg">
-                                </p>
-                            </figure>
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>
-                                        <strong>Post für den Tiger</strong><br/>
-                                        <small><strong>VerfasserIn:</strong> Janosch</small><br/>
-                                        <small><strong>Jahr:</strong> 2004</small><br/>
-                                        <small><strong>Verlag:</strong> Weinheim ; Basel, Beltz und Gelberg</small>
+                        <a href="https://buechereien.wien.gv.at/Permalink.aspx?id=1109108">
+                            <article class="media">
+                                <figure class="media-left">
+                                    <p class="image is-64x64">
+                                        <img alt="Book Cover" src="https://cover.ekz.de/9783407760142.jpg">
                                     </p>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Post für den Tiger</strong><br/>
+                                            <small><strong>VerfasserIn:</strong> Janosch</small>
+                                            <br/>
+                                            <small><strong>Jahr:</strong> 2004</small>
+                                            <br/>
+                                            <small><strong>Verlag:</strong> Weinheim ; Basel, Beltz und Gelberg</small>
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </article></a>
+                            </article>
+                        </a>
                     </div>
                 </div>
             </article>
