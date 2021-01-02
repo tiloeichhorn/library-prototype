@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>BookIO</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -65,14 +65,14 @@
         <div class="tile is-vertical is-8">
             <div class="tile">
                 <div class="tile is-parent is-vertical">
-                    <article class="tile is-child notification is-info">
+                    <article class="tile is-child notification ">
                         <p class="title">Search for books</p>
                         <form>
                             <div class="field is-horizontal">
                                 <div class="field-body">
                                     <div class="field">
                                         <div class="control">
-                                            <input class="input" type="text"
+                                            <input class="input is-info" type="text"
                                                    placeholder="e.g. Title or Keyword">
                                         </div>
                                     </div>
@@ -82,7 +82,7 @@
                                 <div class="field-body">
                                     <div class="field">
                                         <div class="control">
-                                            <button class="button is-info is-inverted"><strong>Find</strong></button>
+                                            <button class="button is-info "><strong>Find</strong></button>
                                         </div>
                                     </div>
                                 </div>
@@ -96,15 +96,15 @@
                     </article>
                 </div>
                 <div class="tile is-parent">
-                    <article class="tile is-child notification is-info is-fullwidth" style="padding-right: 24px">
+                    <article class="tile is-child notification is-fullwidth" style="padding-right: 24px">
                         <p class="title">Actions</p>
-                        <a class="button is-large is-fullwidth is-info is-inverted is-outlined  mt-2"
+                        <a class="button is-large is-fullwidth is-info    mt-2"
                            href="lendBook/lend.html">Lend books</a>
-                        <a class="button is-large is-fullwidth is-info is-inverted is-outlined  mt-2"
+                        <a class="button is-large is-fullwidth is-info    mt-2"
                            href="returnBook/return.html">Return Books</a>
-                        <a class="button is-large is-fullwidth is-info is-inverted is-outlined  mt-2"
+                        <a class="button is-large is-fullwidth is-info    mt-2"
                            href="addNewBook/addBook.html">Add new book</a>
-                        <a class="button is-large is-fullwidth is-info is-inverted is-outlined  mt-2">
+                        <a class="button is-large is-fullwidth is-info    mt-2">
                             Check overdue books</a>
                     </article>
                 </div>
@@ -112,7 +112,7 @@
             <div class="tile is-parent">
                 <article class="tile is-child notification is-danger">
                     <p class="title">Overdues</p>
-                    <p class="subtitle">Display overdue books info here...</p>
+                    <p class="subtitle">These borrowings should be returned by now:</p>
                     <div class="content">
                         <!-- Content -->
                     </div>
