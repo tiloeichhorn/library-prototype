@@ -2,27 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>BookIO</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 <body style="max-width: 1400px; margin:auto">
 <header>
     <section class="hero">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav aria-label="main navigation" class="navbar" role="navigation">
             <div class="navbar-brand">
-                <a class="navbar-item"><div class="button is-info is-hovered" style="font-family: 'Audiowide', cursive;"><strong class="title">BookIO</strong></div></a>
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                   data-target="navbarBasicExample">
+                <a class="navbar-item">
+                    <div class="button is-info is-hovered" style="font-family: 'Audiowide', cursive;"><strong
+                            class="title">BookIO</strong></div>
+                </a>
+                <a aria-expanded="false" aria-label="menu" class="navbar-burger" data-target="navbarBasicExample"
+                   role="button">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-            <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-menu" id="navbarBasicExample">
                 <div class="navbar-start">
                     <a class="navbar-item" href="../index.html">Home</a>
                     <a class="navbar-item" href="../addNewBook/addBook.html">Add New Book</a>
@@ -57,33 +60,33 @@
     </section>
 </header>
 <section style="min-height: 900px;">
-<!------------------------ START ------------------------>
+    <!------------------------ START ------------------------>
+
+    <nav class="level">
+        <div class="level-item is-parent">
+            <article class="is-child notification is-rounded">
+                <p>To start scanning the books, please enter the student id first:</p>
+                <br/>
+                <label class="label">Student ID</label>
+                <div class="field has-addons">
+                    <div class="control has-icons-left">
+                        <input class="input" placeholder="1111-21" type="text" value=""/>
+                        <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                </span>
+                    </div>
+                    <div class="control">
+                        <a class="button is-info" href="return-step-2.html">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </nav>
 
 
-
-<div class="tile is-parent">
-    <article class="tile is-child notification is-rounded" >
-  <label class="label">Student ID</label>
-  <div class="field has-addons">
-    
-    <div class="control has-icons-left">
-
-      <input class="input" type="text" placeholder="1111-21" value="">
-      <span class="icon is-small is-left">
-        <i class="fas fa-user"></i>
-      </span>
-    </div>
-    <div class="control">
-      <a class="button is-info" href="return-step-2.html">
-        <i class="fas fa-search"></i>
-      </a>
-    </div>
-  </div>
-
-
-
-
-<!------------------------ END ------------------------>
+    <!------------------------ END ------------------------>
 </section>
 <footer class="footer">
     <div class="content has-text-centered">

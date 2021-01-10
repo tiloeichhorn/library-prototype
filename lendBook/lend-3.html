@@ -2,30 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>BookIO</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 <body style="max-width: 1400px; margin:auto">
 <header>
     <section class="hero">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav aria-label="main navigation" class="navbar" role="navigation">
             <div class="navbar-brand">
                 <a class="navbar-item">
                     <div class="button is-info is-hovered" style="font-family: 'Audiowide', cursive;"><strong
                             class="title">BookIO</strong></div>
                 </a>
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                   data-target="navbarBasicExample">
+                <a aria-expanded="false" aria-label="menu" class="navbar-burger" data-target="navbarBasicExample"
+                   role="button">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-            <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-menu" id="navbarBasicExample">
                 <div class="navbar-start">
                     <a class="navbar-item" href="../index.html">Home</a>
                     <a class="navbar-item" href="../addNewBook/addBook.html">Add New Book</a>
@@ -65,7 +65,9 @@
 
     <div class="tile is-parent">
         <article class="tile is-child notification is-rounded">
-
+            <div>
+                <label class="label ">3498-34 - Esther Gillespiel - 2B</label>
+            </div>
             <table class="table is-fullwidth mt-4">
                 <tr>
                     <th>#</th>
@@ -74,49 +76,52 @@
                     <th>Author</th>
                     <th>Due Date</th>
                 </tr>
-
                 <tr>
                     <td>1</td>
                     <td>KB34256-43</td>
                     <td>Die Biene Maja und ihre Abenteuer</td>
-                    <td>Waldemar Bonsel</td>
-                    <td>10.03.2021</td>
+                    <td>Bonsel, Waldemar</td>
+                    <td>11.03.2021</td>
                 </tr>
-
                 <tr>
                     <td>2</td>
                     <td>KB853941-56</td>
-                    <td>Das Parfum. Die Geschichte eines M&ouml;rders</td>
-                    <td>Patrick S&uuml;skind</td>
-                    <td>10.03.2021</td>
+                    <td>Das Olchi-ABC</td>
+                    <td>Dietl, Erhard</td>
+                    <td>11.03.2021</td>
                 </tr>
-
+                <tr>
+                    <td>3</td>
+                    <td>KB96628-34</td>
+                    <td>I promessi sposi</td>
+                    <td>Manzoni, Alessandro</td>
+                    <td>11.03.2021</td>
+                </tr>
             </table>
-
+            <div class="notification is-info">
+                Please scan books to add them to the lending list.
+            </div>
             <h4 class="is-size-4">Additional book:</h4>
-
             <div class="columns">
                 <div class="column is-narrow">
                     <div class="field has-addons">
                         <div class="control has-icons-left">
-                            <input class="input" type="text" placeholder="KB23355-54" value="KB96628-34">
+                            <input class="input" placeholder="KB23355-54" type="text" value="">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-book"></i>
                             </span>
                         </div>
                     </div>
                 </div>
-
                 <div class="column is-narrow">
                     <div class="field is-horizontal">
                         <div class="field-label">
-                            <label for="dueDate" class="field-label">Until:</label>
+                            <label class="field-label" for="dueDate">Until:</label>
                         </div>
                         <div class="field-body has-addons">
                             <div class="field has-addons">
                                 <div class="control has-icons-left">
-                                    <input class="input" type="text" placeholder="KB23355-54" value="10.04.2021"
-                                           id="dueDate">
+                                    <input class="input" id="dueDate" placeholder="DD.MM.YYYY" type="text" value="">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-book"></i>
                                     </span>
@@ -128,20 +133,18 @@
                 <div class="column is-narrow">
                     <div class="field">
                         <div class="control">
-                            <a class="button is-info" href="lend-4.html">
+                            <a class="button is-info" href="lend-3.html">
                                 <i class="fas fa-check"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-    </div>
-
-    <div class="buttons is-justify-content-space-between">
-        <a href="lend.html" class="button is-danger">Go Back</a>
-        <a href="../index.html" class="button is-success">Confirm Lending</a>
-    </div>
-    </article>
+            <div class="buttons is-justify-content-space-between">
+                <a class="button is-danger" href="lend.html">Go Back</a>
+                <a class="button is-success" href="lend-4.html">Confirm Lending</a>
+            </div>
+        </article>
     </div>
 
 

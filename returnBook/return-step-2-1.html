@@ -54,7 +54,7 @@
         </nav>
         <div class="hero-body">
             <div class="container">
-                <h1 class="title is-size-1">Book Lending</h1>
+                <h1 class="title is-size-1">Book Return</h1>
             </div>
         </div>
     </section>
@@ -70,77 +70,57 @@
             </div>
             <table class="table is-fullwidth mt-4">
                 <tr>
+                    <th></th>
                     <th>#</th>
                     <th>ID Book</th>
                     <th>Name</th>
-                    <th>Author</th>
+                    <th>Autor</th>
+                    <th>Issue Date</th>
                     <th>Due Date</th>
                 </tr>
                 <tr>
+                    <td><input checked class="checkbox" type="checkbox"></td>
                     <td>1</td>
-                    <td>KB34256-43</td>
-                    <td>Die Biene Maja und ihre Abenteuer</td>
-                    <td>Bonsel, Waldemar</td>
-                    <td>11.03.2021</td>
+                    <td>KB0124-21</td>
+                    <td>Zwei Elefanten, die sich gut kannten</td>
+                    <td>Lobe, Mira</td>
+                    <td>11.01.2020</td>
+                    <td>11.02.2020</td>
                 </tr>
                 <tr>
+                    <td><input checked class="checkbox" type="checkbox"></td>
                     <td>2</td>
-                    <td>KB853941-56</td>
+                    <td>KB652424-21</td>
                     <td>Das Olchi-ABC</td>
                     <td>Dietl, Erhard</td>
-                    <td>11.03.2021</td>
+                    <td>11.01.2020</td>
+                    <td>11.02.2020</td>
+                </tr>
+                <tr>
+                    <td><input class="checkbox" type="checkbox"></td>
+                    <td>3</td>
+                    <td>KB065874-19</td>
+                    <td>Hallo, kleiner Eisbär</td>
+                    <td>de Beer, Hans</td>
+                    <td>16.01.2020</td>
+                    <td>16.02.2020</td>
+                </tr>
+                <tr>
+                    <td><input class="checkbox" type="checkbox"></td>
+                    <td>4</td>
+                    <td>KB2498-20</td>
+                    <td>Ich mach dich gesund, sagte der Bär</td>
+                    <td>Janosch</td>
+                    <td>16.01.2020</td>
+                    <td>16.02.2020</td>
                 </tr>
             </table>
             <div class="notification is-info">
-                Please scan books to add them to the lending list.
-            </div>
-            <h4 class="is-size-4">Additional book:</h4>
-            <div class="columns">
-                <div class="column is-narrow">
-                    <div class="field has-addons">
-                        <div class="control has-icons-left">
-                            <input class="input" placeholder="KB23355-54" type="text" value="KB96628-34">
-                            <span class="icon is-small is-left">
-                                <i class="fas fa-book"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-narrow">
-                    <div class="field is-horizontal">
-                        <div class="field-label">
-                            <label class="field-label" for="dueDate">Until:</label>
-                        </div>
-                        <div class="field-body has-addons">
-                            <div class="field has-addons">
-                                <div class="control has-icons-left">
-                                    <input class="input" id="dueDate" placeholder="KB23355-54" type="text"
-                                           value="10.04.2021">
-                                    <span class="icon is-small is-left">
-                                        <i class="fas fa-book"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-narrow">
-                    <div class="field">
-                        <div class="control">
-                            <a class="button is-info" href="lend-3.html">
-                                <i class="fas fa-check"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="notification is-warning">
-                <a class="delete" href="lend-2-1.html"></a>
-                If the scanner doesn't work, you can add books manually.
+                These books are currently lent to the student. Please scan returned books to update their status.
             </div>
             <div class="buttons is-justify-content-space-between">
-                <a class="button is-danger" href="lend.html">Go Back</a>
-                <a class="button is-success" href="lend-4.html">Confirm Lending</a>
+                <a class="button is-danger" href="return.html">Go Back </a>
+                <a class="button is-success" href="return-step-3.html"> Next </a>
             </div>
         </article>
     </div>
