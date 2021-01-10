@@ -60,26 +60,90 @@
     </section>
 </header>
 <section style="min-height: 900px;">
+
     <!------------------------ START ------------------------>
 
     <div class="tile is-parent">
         <article class="tile is-child notification is-rounded">
-            <label class="label">Student ID</label>
-            <div class="field has-addons">
-                <div class="control has-icons-left">
-                    <input class="input" type="text" placeholder="1111-21" value="">
-                    <span class="icon is-small is-left">
-                    <i class="fas fa-user"></i>
-                    </span>
+
+            <table class="table is-fullwidth mt-4">
+                <tr>
+                    <th>#</th>
+                    <th>ID Book</th>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Due Date</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>KB34256-43</td>
+                    <td>Die Biene Maja und ihre Abenteuer</td>
+                    <td>Waldemar Bonsel</td>
+                    <td>10.03.2021</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>KB853941-56</td>
+                    <td>Das Parfum. Die Geschichte eines M&ouml;rders</td>
+                    <td>Patrick S&uuml;skind</td>
+                    <td>10.03.2021</td>
+                </tr>
+
+            </table>
+
+            <h4 class="is-size-4">Additional book:</h4>
+
+            <div class="columns">
+                <div class="column is-narrow">
+                    <div class="field has-addons">
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" placeholder="KB23355-54" value="KB96628-34">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-book"></i>
+                            </span>
+                        </div>
+                    </div>
                 </div>
-                <div class="control">
-                    <a class="button is-info" href="lend-2.html">
-                        <i class="fas fa-search"></i>
-                    </a>
+
+                <div class="column is-narrow">
+                    <div class="field is-horizontal">
+                        <div class="field-label">
+                            <label for="dueDate" class="field-label">Until:</label>
+                        </div>
+                        <div class="field-body has-addons">
+                            <div class="field has-addons">
+                                <div class="control has-icons-left">
+                                    <input class="input" type="text" placeholder="KB23355-54" value="10.04.2021"
+                                           id="dueDate">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-book"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-narrow">
+                    <div class="field">
+                        <div class="control">
+                            <a class="button is-info" href="lend-4.html">
+                                <i class="fas fa-check"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </article>
     </div>
+
+    <div class="buttons is-justify-content-space-between">
+        <a href="lend.html" class="button is-danger">Go Back</a>
+        <a href="../index.html" class="button is-success">Confirm Lending</a>
+    </div>
+    </article>
+    </div>
+
 
     <!------------------------ END ------------------------>
 </section>
