@@ -2,27 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>BookIO</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 <body style="max-width: 1400px; margin:auto">
 <header>
     <section class="hero">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav aria-label="main navigation" class="navbar" role="navigation">
             <div class="navbar-brand">
-                <a class="navbar-item"><div class="button is-info is-hovered" style="font-family: 'Audiowide', cursive;"><strong class="title">BookIO</strong></div></a>
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                   data-target="navbarBasicExample">
+                <a class="navbar-item">
+                    <div class="button is-info is-hovered" style="font-family: 'Audiowide', cursive;"><strong
+                            class="title">BookIO</strong></div>
+                </a>
+                <a aria-expanded="false" aria-label="menu" class="navbar-burger" data-target="navbarBasicExample"
+                   role="button">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-            <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-menu" id="navbarBasicExample">
                 <div class="navbar-start">
                     <a class="navbar-item" href="../index.html">Home</a>
                     <a class="navbar-item" href="../addNewBook/addBook.html">Add New Book</a>
@@ -51,81 +54,68 @@
         </nav>
         <div class="hero-body">
             <div class="container">
-                <h1 class="title is-size-1"">Register New Book</h1>
+                <h1 class="title is-size-1">Register New Book</h1>
             </div>
         </div>
     </section>
 </header>
 <section style="min-height: 900px;">
-    
-
     <nav class="level">
         <div class="level-item is-parent">
             <article class="is-child notification is-rounded">
                 <p>Enter the data from the book and the number, id
-                    will be generated automatically. 
-                   </p>
+                    will be generated automatically.
+                </p>
                 <br/>
                 <div class="columns">
                     <div class="column">
-                    <div class="control has-icons-left">
-                        <input class="input" placeholder="Book Name" type="text" value=""/>
-                        <span class="icon is-small is-left">
+                        <div class="control has-icons-left">
+                            <input class="input" placeholder="Book Name" type="text" value=""/>
+                            <span class="icon is-small is-left">
                             <i class="fas fa-heading"></i>
                         </span>
+                        </div>
                     </div>
-                </div>
-                <div class="column">
-                    <div class="control has-icons-left">
-                        <input class="input" placeholder="Author" type="text" value=""/>
-                        <span class="icon is-small is-left">
+                    <div class="column">
+                        <div class="control has-icons-left">
+                            <input class="input" placeholder="Author" type="text" value=""/>
+                            <span class="icon is-small is-left">
                             <i class="fas fa-user-edit"></i>
                         </span>
+                        </div>
                     </div>
-                </div>
-                <div class="column">
-                    <div class="control has-icons-left">
-                        <input class="input" placeholder="Publisher" type="text" value=""/>
-                        <span class="icon is-small is-left">
+                    <div class="column">
+                        <div class="control has-icons-left">
+                            <input class="input" placeholder="Publisher" type="text" value=""/>
+                            <span class="icon is-small is-left">
                             <i class="fas fa-warehouse"></i>
                         </span>
+                        </div>
                     </div>
-                </div>
-                <div class="column">
-                    <div class="control has-icons-left">
-                        <input class="input" placeholder="Year" type="text" value=""/>
-                        <span class="icon is-small is-left">
+                    <div class="column">
+                        <div class="control has-icons-left">
+                            <input class="input" placeholder="Year" type="text" value=""/>
+                            <span class="icon is-small is-left">
                             <i class="fas fa-calendar-alt"></i>
                         </span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="control ">
+                            <input class="input" placeholder="Quantity" type="text" value=""/>
+                        </div>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="control ">
-                        <input class="input" placeholder="Quantity" type="text" value=""/>
-                        
+                <div class="buttons is-justify-content-space-between">
+                    <a class="button is-danger" href="../index.html">Go Back</a>
+                    <div>
+                        <a class="button is-success" href="./addBook-1.html">Add additional book</a>
+                        <a class="button is-success" href="./addBook-2.html">Save</a>
                     </div>
                 </div>
-               
-            </div>
-            <div class="buttons is-justify-content-space-between">
-                <a class="button is-danger" href="../index.html">Go Back</a>
-                <div>
-                    <a class="button is-success" href="./addBook-1.html">Add additional book</a>
-                    <a class="button is-success" href="./addBook-2.html">Save</a>
-                </div>
-            </div>
             </article>
         </div>
     </nav>
-
-
-
-
-
-
-
-
-
 </section>
 <footer class="footer">
     <div class="content has-text-centered">
